@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a:hover {
+  border-bottom: 2px solid;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  /* max-width: 1350px; */
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+  position: relative;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 10px;
+}
+
+.icons a {
+  border: none;
+}
+
+.icons i {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.main {
+  height: 100vh;
+  background-image: url("images/heroimg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.fa-less-than,
+.fa-greater-than {
+  display: none;
+}
+
+.badge {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #000, #737373);
+  padding: 8px 55px;
+}
+
+.row {
+  background-color: #b2b2b2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 40px;
+  gap: 80px;
+  text-align: center;
+}
+
+.card-container {
+  padding: 50px;
+  background-color: #dad6df;
+}
+
+h1 {
+  margin: 40px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  padding: 20px 0;
+}
+
+.card p {
+  font-weight: 600;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  ul {
+    /* display: none; */
+  }
+
+  li {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .row {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+
+  .cards {
+    grid-template-columns: auto auto;
+  }
+
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  ul {
+    /* display: none; */
+    width: 250px;
+    overflow-x: scroll;
+  }
+  .icons i {
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+  .fa-greater-than,
+  .fa-less-than {
+    display: block;
+  }
+  .cards {
+    grid-template-columns: auto;
+  }
+}
